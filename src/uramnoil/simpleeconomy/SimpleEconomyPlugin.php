@@ -9,6 +9,8 @@
 namespace uramnoil\simpleeconomy;
 
 
-class SimpleEconomyPlugin {
+use pocketmine\plugin\PluginBase;
+
+class SimpleEconomyPlugin extends PluginBase {
 
 }

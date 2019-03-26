@@ -6,14 +6,13 @@
  * Time: 0:38
  */
 
-namespace uramnoil\simpleeconomy;
+namespace uramnoil\simpleeconomy\repository;
 
 
 use pocketmine\IPlayer;
-use uramnoil\simpleeconomy\repository\Account;
 
 class AccountFactory {
-	public function createAccount(int $id, IPlayer $player, int $money = 0): Account {
+	public function createAccount(int $id, IPlayer $player, int $money): Account {
 		return new Account($id, strtolower($player->getName()), $money);
 	}
 }

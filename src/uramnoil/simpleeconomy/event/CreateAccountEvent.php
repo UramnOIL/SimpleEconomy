@@ -9,6 +9,11 @@
 namespace uramnoil\simpleeconomy\event;
 
 
-class CreateAccountEvent {
+use pocketmine\IPlayer;
 
+class CreateAccountEvent extends SimpleEconomyEvent{
+
+	public function __construct(IPlayer $player) {
+		$this->player = $player;
+	}
 }

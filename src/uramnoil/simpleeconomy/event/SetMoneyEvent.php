@@ -9,6 +9,28 @@
 namespace uramnoil\simpleeconomy\event;
 
 
-class SetMoneyEvent {
+use pocketmine\Player;
 
+class SetMoneyEvent extends SimpleEconomyEvent {
+	/** @var int */
+	private $set;
+
+	public function __construct(Player $player, int $set) {
+		$this->player = $player;
+		$this->set = $set;
+	}
+
+	/**
+	 * @return mixed
+	 */
+	public function getSet() {
+		return $this->set;
+	}
+
+	/**
+	 * @param mixed $set
+	 */
+	public function setSet($set): void {
+		$this->set = $set;
+	}
 }

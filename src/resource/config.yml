@@ -1,0 +1,4 @@
+language: ja
+prefix-unit:
+suffix-unit: 円
+default-money: 1000

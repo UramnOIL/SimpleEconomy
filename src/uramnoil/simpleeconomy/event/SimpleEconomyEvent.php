@@ -9,6 +9,17 @@
 namespace uramnoil\simpleeconomy\event;
 
 
-class SimpleEconomyEvent {
+use pocketmine\event\Event;
+use pocketmine\IPlayer;
 
+class SimpleEconomyEvent extends Event {
+	/** @var IPlayer */
+	protected $player;
+
+	/**
+	 * @return IPlayer
+	 */
+	public function getPlayer(): IPlayer {
+		return $this->player;
+	}
 }

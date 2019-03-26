@@ -6,9 +6,11 @@
  * Time: 0:48
  */
 
-namespace uramnoil\simpleeconomy\repository;
+namespace uramnoil\simpleeconomy;
 
 
-class ResourceException {
+use \RuntimeException;
+
+class ResourceException extends RuntimeException {
 
 }

@@ -9,6 +9,8 @@
 namespace uramnoil\simpleeconomy\repository;
 
 
-class SimpleEconomyException {
+use \RuntimeException;
+
+class SimpleEconomyException extends RuntimeException {
 
 }
